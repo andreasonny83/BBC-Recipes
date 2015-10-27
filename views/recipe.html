@@ -1,0 +1,26 @@
+<div class="sub-header">
+  <a href="#/home">back</a>
+  <h2 class="text-center">{{recipe.title}}</h2>
+</div>
+
+<h5>{{recipe.description}}</h5>
+
+<section class="container" id="description">
+  <div class="row">
+
+    <div class="panel-container">
+      <img ng-src="{{recipe.image}}" alt="image of the recipe" />
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
+        </ul>
+      </div>
+      <div class="preparation">
+        <h3>Preparation</h3>
+        <p>{{recipe.preparation}}</p>
+      </div>
+    </div>
+
+  </div>
+</section>

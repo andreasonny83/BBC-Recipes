@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '0.12'
+# whitelist
+branches:
+  only:
+    - master
+    - develop
+    - /^deploy-.*$/
+# blacklist
+branches:
+  except:
+    - feature
+    - test
+before_script:
+ - npm install -g bower
+ - bower install
+ - gulp build
+script:
+  - gulp test
+after_success:
+  gulp deploy --user $PROD_USERNAME --password $PROD_PASSWORD

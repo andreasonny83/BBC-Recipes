@@ -1,0 +1,97 @@
+#contact_form {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+  span {
+    display: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  input, textarea {
+    // width: 300px;
+    padding: 6px 10px;
+    font-size: 21px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  .g-recaptcha {
+    margin: 0 auto;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    font-size: 21px;
+    background-color: $color-primary-2;
+    color: #222;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 5px 6px rgba(0,0,0,.5);
+    transition: all .3s linear;
+
+    &:hover {
+      background-color: $color-primary-1;
+    }
+    &[disabled] {
+      background-color: $color-primary-4;
+      color: #444;
+      box-shadow: 0 1px 6px #222;
+    }
+  }
+}
+
+.alert {
+  color: rgb(34, 34, 34);
+  padding: 6px 40px;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  font-size: 18px;
+  left: 25%;
+  right: 25%;
+  margin-top: -15px;
+  line-height: 30px;
+  animation: alert 5s;
+  animation-fill-mode: forwards;
+
+  &.alert-danger {
+    background-color: rgb(191, 91, 91);
+  }
+  &.alert-success {
+    background-color: $color-secondary-1-1;
+  }
+}
+
+.alert.ng-hide {
+  display: none;
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

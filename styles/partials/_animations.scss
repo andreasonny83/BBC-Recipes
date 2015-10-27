@@ -1,0 +1,78 @@
+.underscore {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/**
+ * CONTAINER
+ */
+.container.ng-enter {
+  animation: page .3s both ease-in;
+}
+
+@keyframes page {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  75% {
+    opacity: .1;
+  }
+  90% {
+    opacity: .5;
+  }
+}
+
+/**
+ * PANEL
+ */
+.panel-skill.ng-enter,
+.panel-skill.ng-leave,
+.panel-skill.ng-move {
+  transition: .5s linear all;
+  transform: translateY(0);
+}
+
+.panel-skill.ng-move {
+  opacity: 0;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+
+.panel-skill.ng-move.ng-move-active {
+  opacity: .8;
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.panel-skill.ng-enter {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.panel-skill.ng-enter.ng-enter-active {
+  opacity: .8;
+  transform: translateY(0);
+}
+
+.panel-skill.ng-leave {
+  opacity: .8;
+  transform: translateY(0);
+}
+
+.panel-skill.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateY(-40px);
+}

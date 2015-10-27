@@ -1,0 +1,29 @@
+<section class="panel-container">
+
+<div class="form_login">
+  <h2>Register</h2>
+  <form role="form" name="registerForm" id="register_form">
+    <label for="reg_username">Username:</label>
+    <input id="reg_username" class="form-control" type="text" name="name" ng-model="regData.reg_name" required="required" placeholder="Chose a username">
+    <label for="reg_email">E-mail:</label>
+    <input id="reg_email" class="form-control" type="email" name="email" ng-model="regData.reg_email" required="required" placeholder="Your email address">
+    <label for="reg_email_confirm">Confirm E-mail:</label>
+    <input id="reg_email_confirm" class="form-control" type="email" name="email_confirm" ng-model="regData.reg_email_confirm" required="required" placeholder="Confirm your email address">
+    <label for="reg_password">Chose a password:</label>
+    <input id="reg_password" class="form-control" type="password" name="password" ng-model="regData.reg_password" required="required" placeholder="Your password">
+    <label for="reg_password_confirm">Confirm Password:</label>
+    <input id="reg_password_confirm" class="form-control" type="password" name="password_confirm" ng-model="regData.reg_password_confirm" required="required" placeholder="Confirm your password">
+    <input type="button" name="register" value="Register" ng-click="register()">
+  </form>
+
+  <h2>Log In</h2>
+  <form role="form" name="loginForm" id="login_form">
+    <label for="email">E-mail:</label>
+    <input id="email" class="form-control" type="email" name="email" ng-model="loginData.email" required="required" placeholder="Your email address">
+    <label for="password">Chose a password:</label>
+    <input id="password" class="form-control" type="password" name="password" ng-model="loginData.password" required="required" placeholder="Your password">
+    <input type="button" name="login" value="Login" ng-click="login()">
+  </form>
+</div>
+
+</section>

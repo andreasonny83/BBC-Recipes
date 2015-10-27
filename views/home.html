@@ -1,0 +1,30 @@
+<div class="sub-header">
+<h2 class="text-center">Recipes</h2>
+</div>
+
+
+<div class="filters">
+
+  <label>Search: <input ng-model="searchText"></label>
+
+  <label>Order By:
+    <select ng-model="sortType">
+      <option value="order">Smart</option>
+      <option value="-age">Years of experience</option>
+      <option value="title">Name</option>
+    </select>
+  </label>
+</div>
+
+<section class="panel-container recipes">
+
+  <a href="#/recipe/{{recipe.uid}}" class="panel panel-recipe" ng-repeat="recipe in recipes">
+    <div class="panel-heading">
+      <p>{{recipe.title}}</p>
+    </div>
+    <div class="panel-image">
+      <img ng-src="{{recipe.image}}" />
+    </div>
+  </a>
+
+</section>

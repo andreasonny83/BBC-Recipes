@@ -1,0 +1,205 @@
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background-color: $color-secondary-1-4;
+	font-family: $font;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, h2, h3, h4, h5 {
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+	color: $color-primary-0;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+	line-height: 48px;
+}
+
+h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+header {
+	background-color: $white;
+	padding: 10px 0;
+	border-bottom: 1px solid $color-primary-4;
+}
+
+#inner-header {
+	width: 100%;
+	padding: 0;
+	text-align: center;
+
+	a {
+		font-size: $small;
+		color: $color-secondary-2-0;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 50px;
+		line-height: 50px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.main-nav {
+	border-bottom: 0;
+	margin: 0;
+	display: none;
+
+	li {
+
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none;
+			padding: 0.75em;
+		}
+	}
+}
+
+
+/*********************
+RESPONSIVE NAV
+*********************/
+
+#inner-header .hamburger {
+	font-size: 26px;
+	line-height: 50px;
+}
+
+.hamburger {
+	display: block;
+}
+
+.responsive-wrapper {
+	display: none;
+
+	ul {
+		background-color: $dark;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li:hover {
+			background-color: $color-primary-4;
+		}
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		font-size: 21px;
+		line-height: 60px;
+		text-decoration: none;
+		text-align: center;
+		color: $color-secondary-2-3;
+	}
+}
+
+/*********************
+SLIDER
+*********************/
+
+.slider {
+	margin-bottom: 30px;
+}
+
+.image-slider {
+	max-height: 400px;
+
+	img {
+		width: 100%;
+	}
+}
+
+/*********************
+FILTERS
+*********************/
+
+.filters {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: right;
+	padding-right: 20px;
+
+	label {
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	label + label {
+		margin-top: 20px;
+	}
+
+	input {
+		padding: 5px 10px;
+	}
+}
+
+/*********************
+CONTAINER
+*********************/
+
+.container {
+	margin: 0 auto;
+
+	p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.container.main {
+	min-height: 600px;
+	color: $color-primary-0;
+
+	a {
+		color: $color-secondary-2-0;
+	}
+}

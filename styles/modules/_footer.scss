@@ -1,0 +1,59 @@
+footer-section {
+  display: block;
+  background-color: $dark;
+  margin-top: 80px;
+
+  .social {
+    padding: 10px 0;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        flex: auto;
+        min-width: 70px;
+        font-size: 32px;
+        transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        a {
+          display: block;
+          line-height: 60px;
+          color: $color-secondary-2-3;
+        }
+      }
+    }
+
+  }
+
+  .copy {
+    font-family: "Roboto", sans-serif;
+    color: $color-primary-3;
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  a:hover {
+    color: $color-primary-2;
+  }
+}
+
+// .mobileXs footer .social ul li {
+//   width: 25%; }

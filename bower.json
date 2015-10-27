@@ -1,0 +1,27 @@
+{
+  "name": "BBC Recipes",
+  "version": "1.0.0",
+  "authors": [
+    "Andrea Sonny <andreasonny83@gmail.com>"
+  ],
+  "description": "BBC Recipes website",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "http://sonnywebdesign.com",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "font-awesome": "~4.4.0",
+    "angular-cookies": "~1.4.7"
+  }
+}

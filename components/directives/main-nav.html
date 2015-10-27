@@ -1,0 +1,14 @@
+<!-- Main navigation -->
+<header class="header">
+  <div id="inner-header" class="wrap container cf">
+
+    <!-- nav -->
+    <nav role="navigation" class="main-nav text-center" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="menu cf">
+        <li ng-hide="tab.hide" ng-repeat="tab in data.tabs | orderBy: 'pos'">
+          <a href="{{tab.link}}">{{tab.title}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

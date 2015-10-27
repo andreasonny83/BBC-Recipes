@@ -1,0 +1,123 @@
+/******************************************************************
+
+768px and up
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $font;
+}
+
+h1, .h1 {
+	font-size: 48px;
+	line-height: 64px;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.container {
+	width: 750px;
+}
+
+.filters {
+	label + label {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+}
+
+.panel {
+	width: calc( 50% - 40px);
+
+	.panel-heading {
+		margin-top: 0;
+	}
+}
+
+.panel-skill {
+	width: calc( 25% - 40px);
+}
+
+.panel-work {
+  width: 100%;
+
+	.more .skills {
+		column-count: 4;
+		-webkit-column-count: 4;
+		text-align: left;
+	}
+}
+
+#contact_form {
+	button {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+
+	a {
+		font-weight: $bold;
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	border: 0;
+
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+
+	li {
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+footer-section .social li {
+	width: auto;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.main-nav {
+	display: block;
+}
+
+
+/*********************
+RESPONSIVE NAV
+*********************/
+
+.hamburger {
+	display: none;
+}
+
+.responsive-nav {
+	display: none;
+}

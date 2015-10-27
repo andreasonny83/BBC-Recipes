@@ -1,0 +1,138 @@
+.panel-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 780px;
+  margin: 0 auto;
+
+  &.recipes {
+    max-width: inherit;
+  }
+}
+
+.panel {
+  width: 100%;
+  margin: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 3px;
+  min-height: 250px;
+  border: none;
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  transition: width 0.25s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.2s cubic-bezier(0.42, 0, 0.58, 1), background-color .4s;
+
+  &:hover {
+    background-color: #FFF;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .panel-heading {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    height: 40px;
+  }
+
+  .panel-body {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .panel-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .button {
+      display: inline-block;
+      color: $dark;
+      padding: 10px;
+      margin-right: 5px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background-color .25s;
+
+      &:active {
+        background-color: $color-secondary-2-1;
+      }
+    }
+  }
+
+}
+
+.panel-recipe {
+  width: calc( 33.33% - 40px);
+  height: 300px;
+  justify-content: flex-start;
+
+  .panel-heading {
+    color: #000;
+    margin: 0;
+
+    p {
+      margin: 0;
+      font-size: 21px;
+    }
+  }
+
+  .panel-image {
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .panel-footer {
+    position: initial;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1);
+    height: 39px;
+    font-size: 14px;
+
+    p {
+      padding-right: 15px;
+    }
+  }
+}
+
+.panel-work {
+  padding: 10px;
+
+  .from, .to {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .from {
+    left: 0;
+  }
+  .to {
+    right: 0;
+  }
+}
+
+.panel.active {
+  background-color: #FFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.35);
+}
